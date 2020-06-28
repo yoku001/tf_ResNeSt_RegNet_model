@@ -77,10 +77,16 @@ def get_model(model_name='ResNest50',input_shape=(224,224,3),n_classes=81,
             'stage_G': 64,
             'SEstyle_atten': "SE"
         },
-        'regnety6.4':{
-            'stage_depth': [2,7,14,2],
-            'stage_width': [144,288,576,1296],
-            'stage_G': 72,
+        'regnety8.0':{
+            'stage_depth': [2,5,15,1],
+            'stage_width': [168,448,896,2016],
+            'stage_G': 77,
+            'SEstyle_atten': "SE"
+        },
+        'regnety16.0':{
+            'stage_depth': [2,4,11,1],
+            'stage_width': [224,448,1232,3024],
+            'stage_G': 112,
             'SEstyle_atten': "SE"
         },
         'regnet':{
